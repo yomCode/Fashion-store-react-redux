@@ -1,5 +1,4 @@
-import { type } from '@testing-library/user-event/dist/type';
-import { ActionTypes } from '../types';
+import { ActionTypes } from '../constants/action-types';
 
 export const setProducts = (products) => {
     return {
