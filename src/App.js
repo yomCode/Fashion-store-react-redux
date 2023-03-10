@@ -1,9 +1,10 @@
 import './App.css';
+import Header from './containers/Header';
 
 function App() {
   return (
     <div>
-      <h4>Hello world!</h4> 
+      <Header />
     </div>
   );
 }
