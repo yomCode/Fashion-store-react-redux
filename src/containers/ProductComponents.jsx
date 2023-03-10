@@ -2,11 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const ProductComponents = () => {
-    const products = useSelector((state) => state);
+    const products = useSelector((state) => state.allProducts.products);
 
-    // const renderList = products.map((product) => {
-    //     const { id, title, image, price, category } = product;
-    // });
+    const {id, title} = products[0];
+    console.log(products)
 
     return (
         <div className="four column wide">
@@ -17,7 +16,7 @@ const ProductComponents = () => {
                     </div>
                     <div className="content">
                         <div className="header">
-
+                            {title}
                         </div>
 
                     </div>
