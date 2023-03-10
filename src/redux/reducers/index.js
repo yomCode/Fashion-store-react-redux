@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
-import { productRducer } from "./productReducer";
+import { selectedProduct } from "../actions/productAction";
+import { productRducer, selectedProductReducer } from "./productReducer";
 
 
 
 const reducers = combineReducers({
     allProducts: productRducer,
+    product: selectedProductReducer,
 });
 
 
