@@ -19,7 +19,7 @@ const ProductComponents = () => {
                             <div className="meta price">
                                 $ {price}
                             </div>
-                            <div className="meta category">
+                            <div className="meta">
                                 {category}
                             </div>
                         </div>
@@ -34,9 +34,10 @@ const ProductComponents = () => {
     console.log(products)
 
     return (
-        <>
+        <div>
             {renderList}
-        </>
+        </div>
+            
     );
 };
 

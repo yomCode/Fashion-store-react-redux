@@ -6,9 +6,9 @@ import ProductDetails from './containers/ProductDetails';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <Router>
-        <Header />
+        <Header />s
           <Routes>
             <Route path="/" element={< ProductListing />} />
             <Route path="/product/:productId" element={< ProductDetails />} />
